@@ -18,4 +18,20 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Common\Domain\Services\communication\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Common\Domain\Services\communication\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common\Domain\Services\communication\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Common\Domain\Services\communication\**" />
+  </ItemGroup>
+
 </Project>

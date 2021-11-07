@@ -37,3 +37,42 @@ C:\Users\SERGIO\Desktop\AppWeb\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api
 C:\Users\SERGIO\Desktop\AppWeb\AppWeb Api\AppWeb Api\obj\Debug\net5.0\ref\AppWeb Api.dll
 C:\Users\SERGIO\Desktop\AppWeb\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.pdb
 C:\Users\SERGIO\Desktop\AppWeb\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.genruntimeconfig.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\appsettings.json
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AppWeb Api.exe
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AppWeb Api.deps.json
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AppWeb Api.runtimeconfig.json
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AppWeb Api.runtimeconfig.dev.json
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AppWeb Api.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\ref\AppWeb Api.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AppWeb Api.pdb
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Humanizer.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.csproj.AssemblyReference.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.AssemblyInfoInputs.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.AssemblyInfo.cs
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.csproj.CoreCompileInputs.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\staticwebassets\AppWeb Api.StaticWebAssets.Manifest.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\staticwebassets\AppWeb Api.StaticWebAssets.xml
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\scopedcss\bundle\AppWeb Api.styles.css
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.RazorTargetAssemblyInfo.cache
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.csproj.CopyComplete
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\ref\AppWeb Api.dll
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.pdb
+C:\Users\SERGIO\Desktop\Nueva carpeta (2)\Nueva carpeta (2)\AppWeb Api\AppWeb Api\obj\Debug\net5.0\AppWeb Api.genruntimeconfig.cache

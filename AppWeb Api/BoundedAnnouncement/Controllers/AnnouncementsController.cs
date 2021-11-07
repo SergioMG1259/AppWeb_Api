@@ -6,6 +6,7 @@ using AppWeb_Api.BoundedAnnouncement.Resources;
 using AppWeb_Api.Common.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+//Backend for data persistence announcement
 namespace AppWeb_Api.BoundedAnnouncement.Controllers
 {
     [ApiController]

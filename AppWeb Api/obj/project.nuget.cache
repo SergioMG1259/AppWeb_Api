@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yWRq3w5TFOZsvhi+niAs3FyHNBRCE27DQbY83cWtTnjXAdhQBmZMHjLEsAQdpSdptbXKJ7vrWKT9oKN0qBRbLA==",
+  "dgSpecHash": "sjr6CfaOs1/6kknRr91dHSDLA5wkMHR9A7COULGCgkQMKvEWuG7Qtk817M3FCSrPFeIT2Ei3RMOtGMT5vLJ9Xw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SERGIO\\Desktop\\AppWeb\\AppWeb Api\\AppWeb Api\\AppWeb Api.csproj",
+  "projectFilePath": "C:\\Users\\SERGIO\\Desktop\\Nueva carpeta (2)\\Nueva carpeta (2)\\AppWeb Api\\AppWeb Api\\AppWeb Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SERGIO\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\SERGIO\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

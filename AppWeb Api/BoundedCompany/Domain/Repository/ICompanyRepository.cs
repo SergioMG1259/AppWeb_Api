@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AppWeb_Api.BoundedCompany.Domain.Model;
+// Company Persistence
 namespace AppWeb_Api.BoundedCompany.Domain.Repository
 {
     public interface ICompanyRepository

@@ -1,5 +1,6 @@
 ﻿namespace AppWeb_Api.BoundedCompany.Domain.Model
 {
+    // Company definition
     public class Company
     {
         public int Id { get; set; }

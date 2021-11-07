@@ -1058,11 +1058,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SERGIO\\Desktop\\AppWeb\\AppWeb Api\\AppWeb Api\\AppWeb Api.csproj",
+      "projectUniqueName": "C:\\Users\\SERGIO\\Desktop\\Nueva carpeta (2)\\Nueva carpeta (2)\\AppWeb Api\\AppWeb Api\\AppWeb Api.csproj",
       "projectName": "AppWeb Api",
-      "projectPath": "C:\\Users\\SERGIO\\Desktop\\AppWeb\\AppWeb Api\\AppWeb Api\\AppWeb Api.csproj",
+      "projectPath": "C:\\Users\\SERGIO\\Desktop\\Nueva carpeta (2)\\Nueva carpeta (2)\\AppWeb Api\\AppWeb Api\\AppWeb Api.csproj",
       "packagesPath": "C:\\Users\\SERGIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SERGIO\\Desktop\\AppWeb\\AppWeb Api\\AppWeb Api\\obj\\",
+      "outputPath": "C:\\Users\\SERGIO\\Desktop\\Nueva carpeta (2)\\Nueva carpeta (2)\\AppWeb Api\\AppWeb Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SERGIO\\AppData\\Roaming\\NuGet\\NuGet.Config",

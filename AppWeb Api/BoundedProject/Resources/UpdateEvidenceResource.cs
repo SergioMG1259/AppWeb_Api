@@ -8,8 +8,6 @@ namespace AppWeb_Api.BoundedProject.Resources
         [MaxLength(60)]
         public string Title { get; set; }
         [Required]
-        [MaxLength(500)]
-        public string Description { get; set; }
         public string ImgEvidence { get; set; }
     }
 }

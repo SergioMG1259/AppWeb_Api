@@ -3,12 +3,14 @@ using System.Threading.Tasks;
 using AppWeb_Api.BoundedProject.Domain.Model;
 using AppWeb_Api.BoundedProject.Domain.Service;
 using AppWeb_Api.BoundedProject.Resources;
+using AppWeb_Api.BoundedSecurity.Authorization.Attributes;
 using AppWeb_Api.Common.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppWeb_Api.BoundedProject.Controllers
 {
+    //[Authorize]
     [ApiController]
     [Route("/api/v1/[controller]")]
     /*controlador*/

@@ -29,6 +29,24 @@ using AppWeb_Api.BoundedAnnouncement.Domain.Repository;
 using AppWeb_Api.BoundedAnnouncement.Domain.Service;
 using AppWeb_Api.BoundedAnnouncement.Persistence.Repository;
 using AppWeb_Api.BoundedAnnouncement.Services;
+using AppWeb_Api.BoundedApplication.Domain.Repository;
+using AppWeb_Api.BoundedApplication.Domain.Service;
+using AppWeb_Api.BoundedApplication.Services;
+using AppWeb_Api.BoundedApplication.Persistence.Repository;
+using AppWeb_Api.BoundedNotification.Domain.Repository;
+using AppWeb_Api.BoundedNotification.Domain.Service;
+using AppWeb_Api.BoundedNotification.Services;
+using AppWeb_Api.BoundedNotification.Persistence.Repository;
+using AppWeb_Api.BoundedSecurity.Authorization.Handlers.Implementations;
+using AppWeb_Api.BoundedSecurity.Authorization.Handlers.Interfaces;
+using AppWeb_Api.BoundedSecurity.Authorization.Middleware;
+using AppWeb_Api.BoundedSecurity.Authorization.Settings;
+/*using AppWeb_Api.BoundedSecurity.Authorization.Handlers.Implementations;
+using AppWeb_Api.BoundedSecurity.Authorization.Handlers.Interfaces;
+using AppWeb_Api.BoundedSecurity.Authorization.Middleware;
+using AppWeb_Api.BoundedSecurity.Authorization.Settings;
+using AppWeb_Api.BoundedSecurity.Domain.Services;
+using AppWeb_Api.BoundedSecurity.Services;*/
 using AppWeb_Api.Common.Domain.Repositories;
 using AppWeb_Api.Common.Persistence.Contexts;
 using AppWeb_Api.Common.Persistence.Repositories;
@@ -37,6 +55,7 @@ namespace AppWeb_Api
 {
     public class Startup
     {
+        private readonly string _MyCors = "MyCors";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -47,7 +66,16 @@ namespace AppWeb_Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name:_MyCors, builder =>
+                {
+                    builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost")
+                        .AllowAnyHeader().AllowAnyMethod();
+                });
+            });
             services.AddControllers();
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddSwaggerGen(c => c.SwaggerDoc("v1", new OpenApiInfo {Title = "AppWeb_Api", Version = "v1"}));
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -63,6 +91,13 @@ namespace AppWeb_Api
             services.AddScoped<ICompanyService, CompanyService>();
             services.AddScoped<IAnnouncementRepository, AnnouncementRepository>();
             services.AddScoped<IAnnouncementService, AnnouncementService>();
+            services.AddScoped<IApplicationRepository, ApplicationRepository>();
+            services.AddScoped<IApplicationService, ApplicationService>();
+            services.AddScoped<INotificationPostulantRepository, NotificationPostulantRepository>();
+            services.AddScoped<INotificationPostulantService, NotificationPostulantService>();
+            services.AddScoped<INotificationCompanyRepository, NotificationCompanyRepository>();
+            services.AddScoped<INotificationCompanyService, NotificationCompanyService>();
+            services.AddScoped<IJwtHandler, JwtHandler>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddAutoMapper(typeof(Startup));
         }
@@ -70,6 +105,7 @@ namespace AppWeb_Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(_MyCors);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -78,10 +114,12 @@ namespace AppWeb_Api
             }
 
             app.UseHttpsRedirection();
-
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+            app.UseMiddleware<JwtMiddleware>();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {

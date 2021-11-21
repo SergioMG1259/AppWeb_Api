@@ -7,6 +7,7 @@ using AppWeb_Api.BoundedCompany.Domain.Model;
 using AppWeb_Api.BoundedCompany.Domain.Service.Communication;
 using AppWeb_Api.Common.Domain.Repositories;
 
+//Access Company Services
 namespace AppWeb_Api.BoundedCompany.Services
 {
     public class CompanyService:ICompanyService

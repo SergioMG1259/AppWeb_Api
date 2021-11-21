@@ -19,6 +19,7 @@ namespace AppWeb_Api.Common.Mapping
 {
     public class ModelToResourceProfile:Profile
     {
+        //Model
         public ModelToResourceProfile()
         {
             CreateMap<Postulant, PostulantResource>();

@@ -3,12 +3,17 @@ using System.Threading.Tasks;
 using AppWeb_Api.BoundedCompany.Domain.Service;
 using AppWeb_Api.BoundedCompany.Resource;
 using AppWeb_Api.BoundedCompany.Domain.Model;
+using AppWeb_Api.BoundedCompany.Domain.Service.Communication;
+using AppWeb_Api.BoundedSecurity.Authorization.Attributes;
 using AppWeb_Api.Common.Extensions;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using BCryptNet = BCrypt.Net.BCrypt;
 
+//Access Company
 namespace AppWeb_Api.BoundedCompany.Controllers
 {
+    //[Authorize]
     [ApiController]
     [Route("/api/v1/companies")]
     public class CompaniesController:ControllerBase
@@ -36,13 +41,15 @@ namespace AppWeb_Api.BoundedCompany.Controllers
             var companyResource = _mapper.Map<Company, CompanyResource>(company);
             return companyResource;
         }
-        [HttpPost]
+        [AllowAnonymous]
+        [HttpPost("auth/sign-up")]
         public async Task<IActionResult>PostAsync([FromBody]SaveCompanyResource resource)
         {
 
             if (!ModelState.IsValid)
                 return BadRequest(ModelState.GetErrorMessages());
             var company = _mapper.Map<SaveCompanyResource, Company>(resource);
+            company.Password = BCryptNet.HashPassword(resource.Password);
             var result = await _companyService.SaveAsync(company);
             if (!result.Succes)
                 return BadRequest(result.Message);
@@ -64,6 +71,17 @@ namespace AppWeb_Api.BoundedCompany.Controllers
             }
             var companyResource = _mapper.Map<Company, CompanyResource>(result.Resource);
             return Ok(companyResource);
+        }
+        [AllowAnonymous]
+        [HttpPost("auth/sign-in")]
+        public async Task<IActionResult> Authenticate(AuthenticateCompanyRequest request)
+        {
+            var response = await _companyService.Authenticate(request);
+
+            if (response == null)
+                return BadRequest(new { message = "Email or password is incorrect" });
+
+            return Ok(response);
         }
     }
 }

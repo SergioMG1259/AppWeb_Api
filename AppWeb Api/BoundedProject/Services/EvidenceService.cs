@@ -57,7 +57,6 @@ namespace AppWeb_Api.BoundedProject.Services
                 return new EvidenceResponse("Evidence not found");
             }
             existingEvidence.Title = evidence.Title;
-            existingEvidence.Description = evidence.Description;
             existingEvidence.ImgEvidence = evidence.ImgEvidence;
             try
             {
